@@ -11,16 +11,24 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
+      <div className="logo">
         <Link to="/" className="navbar-logo">
-          AADILY
+          AADILY UK
         </Link>
-        
-      <div className="navbar-container">
+      </div>
 
+      <div className="nav-buttons">
+
+        <Link to="/" className="sign-in">Sign In</Link>
+
+        <Link className="subscribe" to="/">Subscribe</Link>
+      </div>
+
+      <div className="navbar-container">
         {/* <div className="menu-icon" onClick={handleClick}>
           <FontAwesomeIcon icon={click ? faTimes : faBars} />
         </div> */}
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links">
               Politics

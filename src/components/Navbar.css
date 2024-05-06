@@ -4,13 +4,67 @@
     background-color: black;
 
 }
+.navbar .logo{
+
+  padding-top:20px;
+
+}
 .navbar .navbar-logo{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left:20px;
+
+
+}
+.navbar .navbar-logo:hover{
+
+  color: gainsboro;
+}
+
+.navbar .nav-buttons{
+
+  display: flex;
+  justify-content: flex-end;
+  gap:20px;
+  margin-top:-30px;
+  margin-right:20px;
+}
+.navbar .nav-buttons .sign-in{
+  background-color: black;
+  color: white;
+  border: none;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-size:18px;
+  text-decoration: none;
+
+}
+.navbar .nav-buttons .sign-in:hover{
+
+  color:grey;
+}
+.navbar .nav-buttons .subscribe {
+  margin-top: -3px;
+  background-color: white;
+  border-radius: 5px;
+  height: 20px;
+  text-decoration: none; /* Remove underlines */
+  font-weight:600;
+  color: black;
+  display: inline-block; /* Ensures the link behaves like a block element */
+  padding:5px; /* Adjust padding as needed */
+}
+
+.navbar .nav-buttons .subscribe:hover {
+  background-color: black;
+  color: white;
 }
 
 .navbar-container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,4 +90,7 @@
   .nav-links {
     text-decoration: none;
     color: white; /* Adjust as needed */
+  }
+  .nav-links:hover{
+    text-decoration: underline;
   }
