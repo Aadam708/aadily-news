@@ -1,0 +1,34 @@
+.bottomNav{
+    margin-top: 20px;
+    background-color: black;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:5px;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+.bottom-container a.instagram:hover{
+    color: #d62976;
+    transform: scale(1.2);
+}
+.bottom-container a.facebook:hover {
+    color:#1877F2; /* Change to your preferred color */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
+.bottom-container a.twitter:hover{
+    color:#008AD8;
+    transform: scale(1.2);
+}

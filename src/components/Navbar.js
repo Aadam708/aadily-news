@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 import './Navbar.css'
 
 export default function Navbar() {
-  const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+
 
   return (
     <nav className="navbar">
@@ -25,10 +23,8 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-container">
-        {/* <div className="menu-icon" onClick={handleClick}>
-          <FontAwesomeIcon icon={click ? faTimes : faBars} />
-        </div> */}
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+        <ul className={"nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links">
               Politics
