@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <Link to="/" className="navbar-logo">
-          AADILYS1 UK
+          AADILY UK
         </Link>
       </div>
 
