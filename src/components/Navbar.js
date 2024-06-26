@@ -1,9 +1,19 @@
 
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import SignupModal from './SignupModal';
 import './Navbar.css'
 
 export default function Navbar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
 
 
@@ -16,9 +26,7 @@ export default function Navbar() {
       </div>
 
       <div className="nav-buttons">
-
-        <Link to="/" className="sign-in">Sign In</Link>
-
+        <button className="sign-in" onClick={openModal}>Sign In</button>
         <Link className="subscribe" to="/">Subscribe</Link>
       </div>
 
@@ -67,6 +75,9 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
+      <SignupModal isOpen={isModalOpen} onRequestClose={closeModal} />
+
     </nav>
   );
 }
