@@ -1,3 +1,4 @@
+>>>> main
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SignupModal from './SignupModal';
@@ -5,6 +6,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const openModal = () => {
     setIsModalOpen(true);
