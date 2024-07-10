@@ -8,7 +8,7 @@ export default function BottomNav() {
     <div className="bottomNav">
       <div className="bottom-container">
         <Link to="/" className="about-us">
-          About Us
+          About Uss
         </Link>
         <Link to="/" className="contact-us">
           Contact Us
