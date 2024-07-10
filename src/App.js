@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import BottomNav from './components/BottomNav';
+import DatabaseMessage from './components/DatabaseMessage';
 import { BrowserRouter as Router, Routes, Route }  from 'react-router-dom';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
       <Router>
         <Navbar  />
         <BottomNav />
+
+        <DatabaseMessage/>
 
 
 
