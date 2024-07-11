@@ -1,15 +1,16 @@
-
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
+
 Modal.setAppElement('#root');
+
 
 export default function SignupModal({ isOpen, onRequestClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ export default function SignupModal({ isOpen, onRequestClose }) {
       lastName,
     };
 
+
     try {
       const response = await fetch('http://localhost:4000/api/signup', {
         method: 'POST',
@@ -28,6 +30,7 @@ export default function SignupModal({ isOpen, onRequestClose }) {
         },
         body: JSON.stringify(userData),
       });
+
 
       if (response.ok) {
         console.log('User signed up successfully');
@@ -38,15 +41,8 @@ export default function SignupModal({ isOpen, onRequestClose }) {
     } catch (error) {
       console.error('Error:', error);
     }
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle the signup logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
-
   };
+
 
   return (
     <Modal
@@ -94,11 +90,9 @@ export default function SignupModal({ isOpen, onRequestClose }) {
             required
           />
         </div>
-
         <button type="submit">Sign Up</button>
       </form>
       <button onClick={onRequestClose}>Close</button>
     </Modal>
   );
-}
 }
