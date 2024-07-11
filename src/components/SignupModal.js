@@ -101,3 +101,4 @@ export default function SignupModal({ isOpen, onRequestClose }) {
     </Modal>
   );
 }
+}
