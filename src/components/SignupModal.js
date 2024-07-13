@@ -1,4 +1,4 @@
-// src/components/SignupModal.js
+
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,6 +11,7 @@ Modal.setAppElement('#root');
 export default function SignupModal({ isOpen, onRequestClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const navigate = useNavigate();
@@ -42,6 +43,14 @@ export default function SignupModal({ isOpen, onRequestClose }) {
     } catch (error) {
       console.error('Error:', error);
     }
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle the signup logic here
+    console.log('Email:', email);
+    console.log('Password:', password);
+
   };
 
   const handleLoginNavigation = () => {
@@ -98,6 +107,7 @@ export default function SignupModal({ isOpen, onRequestClose }) {
             required
           />
         </div>
+
         <button type="submit">Sign Up</button>
       </form>
       <button className="login-link" onClick={handleLoginNavigation}>
@@ -105,4 +115,5 @@ export default function SignupModal({ isOpen, onRequestClose }) {
       </button>
     </Modal>
   );
+}
 }
