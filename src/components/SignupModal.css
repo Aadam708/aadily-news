@@ -1,0 +1,48 @@
+/* src/App.css */
+
+/* Style for the modal content */
+.signup-modal {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* Style for the modal overlay */
+  .signup-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Style for the close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Style for the "Already a member? Login" link */
+  .login-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
