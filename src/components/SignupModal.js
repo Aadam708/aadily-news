@@ -1,6 +1,10 @@
 
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
+import './SignupModal.css'; // Ensure this path is correct based on your directory structure
 
 Modal.setAppElement('#root');
 
@@ -10,6 +14,7 @@ export default function SignupModal({ isOpen, onRequestClose }) {
 
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,6 +53,11 @@ export default function SignupModal({ isOpen, onRequestClose }) {
 
   };
 
+  const handleLoginNavigation = () => {
+    onRequestClose();
+    navigate('/login');
+  };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -56,6 +66,9 @@ export default function SignupModal({ isOpen, onRequestClose }) {
       className="signup-modal"
       overlayClassName="signup-modal-overlay"
     >
+      <button className="close-button" onClick={onRequestClose}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -97,7 +110,9 @@ export default function SignupModal({ isOpen, onRequestClose }) {
 
         <button type="submit">Sign Up</button>
       </form>
-      <button onClick={onRequestClose}>Close</button>
+      <button className="login-link" onClick={handleLoginNavigation}>
+        Already a member? Login
+      </button>
     </Modal>
   );
 }
