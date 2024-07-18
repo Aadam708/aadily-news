@@ -1,18 +1,25 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import LoginPage from './components/Login';
+import HomePage from './Pages/HomePage';
+import LoginPage from './Pages/LoginPage';
+import UserHomePage from './Pages/UserHomePage';
+import Logout from './components/Logout';
+import { AuthProvider } from './contexts/AuthContext';
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} exact />
-        <Route path="/login" element={<LoginPage />} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} exact />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/homePage" element={<UserHomePage />} />
+          <Route path="/logout" element={<Logout />} /> {/* Add the logout route */}
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 
