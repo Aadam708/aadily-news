@@ -36,7 +36,7 @@ export default function UserNavbar() {
       <div className="navbar-container">
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-links">
+            <Link to="/PoliticsPage" className="nav-links">
               <FontAwesomeIcon icon={faHome} /> Politics
             </Link>
           </li>
@@ -50,31 +50,7 @@ export default function UserNavbar() {
               <FontAwesomeIcon icon={faLaptop} /> Technology
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              <FontAwesomeIcon icon={faChartLine} /> Markets
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              <FontAwesomeIcon icon={faComments} /> Opinion
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              <FontAwesomeIcon icon={faDollarSign} /> Wealth
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              <FontAwesomeIcon icon={faCompass} /> Pursuits
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links">
-              <FontAwesomeIcon icon={faVideo} /> Videos
-            </Link>
-          </li>
+          
         </ul>
       </div>
     </nav>
