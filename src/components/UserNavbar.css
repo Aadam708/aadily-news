@@ -8,6 +8,15 @@
     padding-top: 20px;
   }
   
+
+.navbar {
+    background-color: black;
+  }
+
+  .navbar .logo {
+    padding-top: 20px;
+  }
+
   .navbar .navbar-logo {
     color: white;
     text-decoration: none;
@@ -20,6 +29,11 @@
     color: gainsboro;
   }
   
+
+  .navbar .navbar-logo:hover {
+    color: gainsboro;
+  }
+
   .navbar .nav-buttons {
     display: flex;
     justify-content: flex-end;
@@ -27,17 +41,19 @@
     margin-top: -30px;
     margin-right: 20px;
   }
-  
+
   .navbar .profile-menu {
     position: relative;
     cursor: pointer;
   }
   
+
   .navbar .profile-icon {
     color: white;
     font-size: 30px;
   }
   
+
   .navbar .dropdown-menu {
     position: absolute;
     right: 0;
@@ -50,6 +66,7 @@
     z-index: 1000;
   }
   
+
   .navbar .dropdown-item {
     display: block;
     padding: 10px;
@@ -61,6 +78,11 @@
     background-color: #f0f0f0;
   }
   
+
+  .navbar .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+
   .navbar-container {
     margin-top: 30px;
     display: flex;
@@ -68,7 +90,7 @@
     align-items: center;
     background-color: rgb(35, 34, 34);
   }
-  
+
   .nav-menu {
     display: flex;
     list-style: none;
@@ -76,12 +98,15 @@
     padding: 0;
   }
   
+
+
   .nav-item {
     margin-top: 10px;
     margin-right: 20px; /* Adjust as needed */
     padding: 5px;
   }
   
+
   .nav-links {
     text-decoration: none;
     color: white; /* Adjust as needed */
@@ -91,3 +116,7 @@
     text-decoration: underline;
   }
   
+
+  .nav-links:hover {
+    text-decoration: underline;
+  }

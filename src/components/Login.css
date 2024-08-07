@@ -10,6 +10,17 @@ body, html {
     height: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Set a clean background */
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
 }
 
 
@@ -118,4 +129,121 @@ body, html {
 
 .login-container {
     animation: fadeIn 1s ease-in-out;
+
+
+.login-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Increased max-width for more space */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* Styling the headline with a more formal font */
+.login-container > h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+
+
+/* Styling the form elements */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Max width for form elements */
+}
+
+
+/* Styling the labels */
+.login-container form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+/* Styling the input fields */
+.login-container form label {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+.login-container form input {
+  padding: 12px; /* Increased padding for better usability */
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+
+.login-container form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+/* Styling the button */
+.login-container button {
+  padding: 12px 20px; /* Increased padding for better usability */
+  font-size: 1em;
+  color: white;
+  background-color: #000; /* Changed background color to black */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+
+.login-container button:hover {
+  background-color: #333; /* Darken the background color on hover */
+}
+
+
+/* Styling the message */
+.login-container p {
+  font-size: 1em;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* Adding a subtle animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+.login-container {
+  animation: fadeIn 1s ease-in-out;
 }

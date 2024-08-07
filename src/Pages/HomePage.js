@@ -16,5 +16,17 @@ export default function HomePage() {
         <a href="/login">Login</a>
       </div>
     </>
+import Navbar from '../components/Navbar';
+import BottomNav from '../components/BottomNav';
+// import BgImg from './Bg-img';
+
+export default function HomePage() {
+  return (
+    <div className="homepage">
+
+      <Navbar />
+      <BottomNav />
+
+    </div>
   );
 }

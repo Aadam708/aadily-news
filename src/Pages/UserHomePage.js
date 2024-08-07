@@ -23,6 +23,12 @@ export default function UserHomePage() {
 
 
 
+      <Navbar />
+      <BottomNav />
+
+      <h1>Welcome, {userDetails?.name}</h1>
+
+
     </div>
   );
 }
