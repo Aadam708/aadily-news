@@ -36,16 +36,23 @@ export default function UserNavbar() {
       <div className="navbar-container">
         <ul className="nav-menu">
           <li className="nav-item">
+            <Link to="/PoliticsPage" className="nav-links">
             <Link to="#" className="nav-links">
               <FontAwesomeIcon icon={faHome} /> Politics
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/" className="nav-links">
             <Link to="#" className="nav-links">
               <FontAwesomeIcon icon={faBriefcase} /> Business
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/" className="nav-links">
+              <FontAwesomeIcon icon={faLaptop} /> Technology
+            </Link>
+          </li>
+          
             <Link to="#" className="nav-links">
               <FontAwesomeIcon icon={faLaptop} /> Technology
             </Link>
@@ -79,4 +86,5 @@ export default function UserNavbar() {
       </div>
     </nav>
   );
+}
 }

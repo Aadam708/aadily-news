@@ -1,5 +1,13 @@
 /* Navbar.css */
 
+.navbar {
+    background-color: black;
+  }
+  
+  .navbar .logo {
+    padding-top: 20px;
+  }
+  
 
 .navbar {
     background-color: black;
@@ -16,6 +24,11 @@
     font-size: 30px;
     padding-left: 20px;
   }
+  
+  .navbar .navbar-logo:hover {
+    color: gainsboro;
+  }
+  
 
   .navbar .navbar-logo:hover {
     color: gainsboro;
@@ -33,11 +46,13 @@
     position: relative;
     cursor: pointer;
   }
+  
 
   .navbar .profile-icon {
     color: white;
     font-size: 30px;
   }
+  
 
   .navbar .dropdown-menu {
     position: absolute;
@@ -50,6 +65,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
   }
+  
 
   .navbar .dropdown-item {
     display: block;
@@ -57,6 +73,11 @@
     text-decoration: none;
     color: black;
   }
+  
+  .navbar .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
 
   .navbar .dropdown-item:hover {
     background-color: #f0f0f0;
@@ -76,17 +97,25 @@
     margin: 0;
     padding: 0;
   }
+  
+
 
   .nav-item {
     margin-top: 10px;
     margin-right: 20px; /* Adjust as needed */
     padding: 5px;
   }
+  
 
   .nav-links {
     text-decoration: none;
     color: white; /* Adjust as needed */
   }
+  
+  .nav-links:hover {
+    text-decoration: underline;
+  }
+  
 
   .nav-links:hover {
     text-decoration: underline;

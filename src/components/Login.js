@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import './Login.css'; // Ensure the CSS file is in the same directory as Login.js
 
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,14 +13,17 @@ function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
 
     try {
       const response = await axios.post('http://localhost:4000/api/login', {
         email,
         password,
       });
+
 
       if (response.data.message === 'Logged in successfully!') {
         setMessage('Login successful');
@@ -35,6 +39,7 @@ function Login() {
       setMessage('An error occurred. Please try again.');
     }
   };
+
 
   return (
     <div className="login-container">
@@ -66,5 +71,6 @@ function Login() {
     </div>
   );
 }
+
 
 export default Login;

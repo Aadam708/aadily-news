@@ -17,6 +17,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/homePage" element={<UserHomePage />} />
           <Route path="/logout" element={<Logout />} /> {/* Add the logout route */}
+          <Route path="/PoliticsPage" element={<UserHomePage />} />
         </Routes>
       </Router>
     </AuthProvider>
